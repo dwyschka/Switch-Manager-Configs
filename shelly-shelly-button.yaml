@@ -1,0 +1,18 @@
+name: Shelly Button
+service: Shelly
+event_type: mqtt
+mqtt_topic_format: shellies/+/input_event/0
+buttons:
+  - actions:
+      - title: press
+        conditions:
+          - key: event
+            value: S
+      - title: press 2x
+        conditions:
+          - key: event
+            value: SS
+      - title: hold
+        conditions:
+          - key: event
+            value: L

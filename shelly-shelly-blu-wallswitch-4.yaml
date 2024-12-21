@@ -1,0 +1,72 @@
+name: Shelly BLU Wallswitch 4
+service: Shelly
+event_type: bthome_ble_event
+identifier_key: device_id
+buttons:
+  - x: 83
+    y: 73
+    width: 167
+    height: 167
+    conditions:
+      - key: event_class
+        value: button_1
+    actions:
+      - title: press
+        conditions:
+          - key: event_type
+            value: press
+      - title: long press
+        conditions:
+          - key: event_type
+            value: long_press
+
+  - x: 251
+    y: 73
+    width: 167
+    height: 167
+    conditions:
+      - key: event_class
+        value: button_3
+    actions:
+      - title: press
+        conditions:
+          - key: event_type
+            value: press
+      - title: long press
+        conditions:
+          - key: event_type
+            value: long_press
+
+  - x: 83
+    y: 241
+    width: 167
+    height: 167
+    conditions:
+      - key: event_class
+        value: button_2
+    actions:
+      - title: press
+        conditions:
+          - key: event_type
+            value: press
+      - title: long press
+        conditions:
+          - key: event_type
+            value: long_press
+
+  - x: 251
+    y: 241
+    width: 167
+    height: 167
+    conditions:
+      - key: event_class
+        value: button_4
+    actions:
+      - title: press
+        conditions:
+          - key: event_type
+            value: press
+      - title: long press
+        conditions:
+          - key: event_type
+            value: long_press
